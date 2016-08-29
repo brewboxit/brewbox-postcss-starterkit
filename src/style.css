@@ -1,0 +1,16 @@
+:root {
+  --mainColor: #F5845B;
+  --warningColor: #BB0707;
+}
+
+.footer__button {
+  background: var(--mainColor);
+}
+
+.footer__button--warning {
+  background: var(--warningColor);
+}
+
+.footer__button--warning span {
+  color: color(var(--mainColor) alpha(-10%));
+}

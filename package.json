@@ -5,6 +5,9 @@
   "author": "Michele Mazzucco and Samuele Verzi",
   "license": "MIT",
   "scripts": {
-    "start": "postcss --config postcss.config.json --watch"
+    "start": "gulp css"
+  },
+  "devDependencies": {
+    "postcss-cssnext": "^2.7.0"
   }
 }
