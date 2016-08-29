@@ -1,13 +1,25 @@
 {
   "name": "brewbox-postcss-starterkit",
-  "version": "0.1.0",
   "description": "Brewbox startekit repo",
   "author": "Michele Mazzucco and Samuele Verzi",
   "license": "MIT",
+  "version": "0.1.0",
+  "keywords": [
+    "postcss",
+    "gulp",
+    "starterkit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/michelemazzucco/brewbox-postcss-starterkit.git"
+  },
   "scripts": {
     "start": "gulp css"
   },
+  "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
     "postcss-cssnext": "^2.7.0"
   }
 }
