@@ -1,0 +1,10 @@
+{
+  "name": "brewbox-postcss-starterkit",
+  "version": "0.1.0",
+  "description": "Brewbox startekit repo",
+  "author": "Michele Mazzucco and Samuele Verzi",
+  "license": "MIT",
+  "scripts": {
+    "start": "postcss --config postcss.config.json --watch"
+  }
+}
