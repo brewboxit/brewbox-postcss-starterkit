@@ -3,11 +3,13 @@ var gulp = require('gulp')
 
 // PostCSS plugins
 var cssnext = require('postcss-cssnext');
+var cssnano = require('cssnano');
 
 gulp.task('css', function () {
 
   var processors = [
-    cssnext
+    cssnext({browsers: ['last 10 versions']}),
+    cssnano({core: false, autoprefixer: false, safe: true})
   ];
 
   return gulp.src('./src/*.css')
