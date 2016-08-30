@@ -6,5 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "postcss --config postcss.config.json --watch"
+  },
+  "devDependencies": {
+    "broccoli": "^0.16.9",
+    "broccoli-postcss": "^3.0.1"
   }
 }
