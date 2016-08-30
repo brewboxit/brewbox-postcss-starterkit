@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "broccoli": "^0.16.9",
-    "broccoli-postcss": "^3.0.1"
+    "broccoli-postcss": "^3.0.1",
+    "postcss-cssnext": "^2.7.0"
   }
 }
