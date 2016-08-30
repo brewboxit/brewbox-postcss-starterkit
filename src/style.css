@@ -1,6 +1,11 @@
 :root {
   --mainColor: #F5845B;
   --warningColor: #BB0707;
+  --spacer: 40px;
+}
+
+.footer {
+  size: var(--spacer) calc(var(--spacer) * 2);
 }
 
 .footer__button {
