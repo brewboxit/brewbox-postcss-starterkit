@@ -1,5 +1,6 @@
-var gulp = require('gulp')
-    , postcss = require('gulp-postcss');
+var gulp = require('gulp');
+var postcss = require('gulp-postcss');
+var watch = require('gulp-watch')
 
 // PostCSS plugins
 var size = require('postcss-size');
@@ -14,7 +15,7 @@ gulp.task('css', function () {
     cssnano({core: false, autoprefixer: false, safe: true})
   ];
 
-  return gulp.src('./src/*.css')
+  return watch('./src/*.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./dist'));
 });

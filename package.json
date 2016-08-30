@@ -21,6 +21,7 @@
     "cssnano": "^3.7.4",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.1.1",
+    "gulp-watch": "^4.3.9",
     "postcss-cssnext": "^2.7.0",
     "postcss-size": "^1.0.0"
   }
