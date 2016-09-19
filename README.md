@@ -1,4 +1,4 @@
-# Brewbox Gulp PostCSS starterkit
+# Brewbox PostCSS starterkit - Gulp starter
 
 ## Get Started
 1. Install [Node][node] and [npm][npm].
