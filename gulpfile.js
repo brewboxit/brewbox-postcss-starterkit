@@ -1,21 +1,29 @@
-var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var watch = require('gulp-watch')
+var gulp = require('gulp')
+var postcss = require('gulp-postcss')
 
 // PostCSS plugins
-var size = require('postcss-size');
-var cssnext = require('postcss-cssnext');
-var cssnano = require('cssnano');
+var size = require('postcss-size')
+var cssnext = require('postcss-cssnext')
+var cssnano = require('cssnano')
+var sourcePath = './src/*.css'
 
-gulp.task('css', function () {
+// PostCSS options
+var options = [
+  size(),
+  cssnext({ browsers: ['last 10 versions'] }),
+  cssnano({ core: false, autoprefixer: false, safe: true })
+]
 
-  var processors = [
-    size(),
-    cssnext({browsers: ['last 10 versions']}),
-    cssnano({core: false, autoprefixer: false, safe: true})
-  ];
+function build() {
+  return gulp.src(sourcePath)
+  .pipe(postcss(options))
+  .pipe(gulp.dest('./dist'))
+}
 
-  return watch('./src/*.css')
-    .pipe(postcss(processors))
-    .pipe(gulp.dest('./dist'));
-});
+function watch() {
+  return gulp.watch(sourcePath, ['css'])
+}
+
+gulp.task('css', build)
+
+gulp.task('css:watch', watch)
