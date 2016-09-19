@@ -5,7 +5,7 @@
   "author": "Michele Mazzucco and Samuele Verzi",
   "license": "MIT",
   "scripts": {
-    "start": "node bin/del.js && broccoli build dist",
+    "start": "npm run del && npm run build",
     "del": "node bin/del.js",
     "build": "broccoli build dist"
   },
