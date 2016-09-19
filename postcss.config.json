@@ -1,0 +1,13 @@
+{
+  "use": ["cssnext", "cssnano", "postcss-size"],
+  "input": "./src/*.css",
+  "output": "./dist/style.css",
+  "cssnext": {
+    "browsers": "last 10 versions"
+  },
+  "cssnano": {
+    "core": false,
+    "autoprefixer": false,
+    "safe": true
+  }
+}
