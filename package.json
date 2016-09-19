@@ -5,11 +5,14 @@
   "author": "Michele Mazzucco and Samuele Verzi",
   "license": "MIT",
   "scripts": {
-    "start": "postcss --config postcss.config.json --watch"
+    "start": "node bin/del.js && broccoli build dist",
+    "del": "node bin/del.js",
+    "build": "broccoli build dist"
   },
   "devDependencies": {
     "broccoli": "^0.16.9",
     "broccoli-postcss": "^3.0.1",
+    "del": "^2.2.2",
     "postcss-cssnext": "^2.7.0"
   }
 }
