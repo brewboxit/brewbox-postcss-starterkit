@@ -5,12 +5,16 @@
   "author": "Michele Mazzucco and Samuele Verzi",
   "license": "MIT",
   "scripts": {
-    "start": "postcss --config postcss.config.json --watch"
+    "start": "npm run css:watch",
+    "clean": "rimraf dist",
+    "css": "postcss --config postcss.config.json",
+    "css:watch": "npm run css -- --watch"
   },
   "devDependencies": {
     "cssnano": "^3.7.5",
     "cssnext": "^1.8.4",
     "postcss-cli": "^2.6.0",
-    "postcss-size": "^1.0.0"
+    "postcss-size": "^1.0.0",
+    "rimraf": "^2.5.4"
   }
 }
