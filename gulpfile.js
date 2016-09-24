@@ -8,7 +8,7 @@ var cssnano = require('cssnano')
 var sourcePath = './src/*.css'
 
 // PostCSS options
-var options = [
+var processors = [
   size(),
   cssnext({ browsers: ['last 10 versions'] }),
   cssnano({ core: false, autoprefixer: false, safe: true })
@@ -16,7 +16,7 @@ var options = [
 
 function build() {
   return gulp.src(sourcePath)
-  .pipe(postcss(options))
+  .pipe(postcss(processors))
   .pipe(gulp.dest('./dist'))
 }
 
