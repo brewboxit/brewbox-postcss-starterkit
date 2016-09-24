@@ -7,7 +7,7 @@ var cssnext = require('postcss-cssnext')
 var cssnano = require('cssnano')
 var sourcePath = './src/*.css'
 
-// PostCSS options
+// PostCSS plugins options
 var processors = [
   size(),
   cssnext({ browsers: ['last 10 versions'] }),
