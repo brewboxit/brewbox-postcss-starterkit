@@ -5,14 +5,14 @@
   "author": "Michele Mazzucco and Samuele Verzi",
   "license": "MIT",
   "scripts": {
-    "start": "npm run del && npm run build",
-    "del": "node bin/del.js",
-    "build": "broccoli build dist"
+    "start": "npm run clean && npm run css",
+    "clean": "rimraf dist",
+    "css": "broccoli build dist"
   },
   "devDependencies": {
     "broccoli": "^0.16.9",
     "broccoli-postcss": "^3.0.1",
-    "del": "^2.2.2",
-    "postcss-cssnext": "^2.7.0"
+    "postcss-cssnext": "^2.7.0",
+    "rimraf": "^2.5.4"
   }
 }
