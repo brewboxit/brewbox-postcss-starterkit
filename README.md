@@ -1,9 +1,9 @@
 # Brewbox PostCSS starterkit
 A series of basic PostCSS environments used during BrewBox event.
 
-* [Gulp starter][g-starter]
-* [Broccoli starter][b-starter]
-* [Cli starter][c-starter]
+* [Gulp starter][g-starter] - [Download][g-d-starter]
+* [Broccoli starter][b-starter] - [Download][b-d-starter]
+* [Cli starter][c-starter] - [Download][c-d-starter]
 
 ## What's included?
 
@@ -14,8 +14,12 @@ A series of basic PostCSS environments used during BrewBox event.
 
 
 [g-starter]:      https://github.com/brewboxit/brewbox-postcss-starterkit/tree/gulp-starter
+[g-d-starter]:    https://github.com/brewboxit/brewbox-postcss-starterkit/archive/gulp-starter.zip
 [b-starter]:      https://github.com/brewboxit/brewbox-postcss-starterkit/tree/broccoli-starter
+[b-d-starter]:    https://github.com/brewboxit/brewbox-postcss-starterkit/archive/broccoli-starter.zip
 [c-starter]:      https://github.com/brewboxit/brewbox-postcss-starterkit/tree/cli-starter
+[c-d-starter]:    https://github.com/brewboxit/brewbox-postcss-starterkit/archive/cli-starter.zip
+
 [autoprefixer]:   https://github.com/postcss/autoprefixer
 [cssnext]:        http://cssnext.io/
 [cssnano]:        http://cssnano.co/
